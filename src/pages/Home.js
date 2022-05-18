@@ -1,10 +1,18 @@
 import React from "react";
-import test from "../images/1st_Date.JPG"
+import NavBar from "../components/Navbar/NavBar";
+import Carousel from "../components/Carousel/Carousel";
+import Footer from "../components/Footer/Footer";
+import InfoSection from "../components/InfoSection/InfoSection";
 
 export default function Home() {
     return (
-        <div>
-            <img src={test}></img>
-        </div>
+        <>
+            <NavBar />
+            <div className="main-content">
+                <InfoSection />
+                <Carousel />
+            </div>
+            <Footer />
+        </>
     )
 }

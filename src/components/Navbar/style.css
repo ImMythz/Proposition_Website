@@ -1,0 +1,17 @@
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #63b7b7;
+
+}
+
+.nav-title {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 2rem;
+}

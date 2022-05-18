@@ -1,0 +1,45 @@
+.info-container {
+    margin: auto;
+    width: 25rem;
+    height: fit-content;
+}
+
+.info-aesthetic {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color: rgb(136 136 136 / 62%);
+}
+
+.info-title-container {
+    width: 100%;
+    height: fit-content;
+    margin: 1rem 0;
+}
+
+.info-title {
+    font-size: 4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.info-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: fit-content;
+}
+
+.indent-line {
+    width: 3rem;
+    height: 0.05rem;
+    background-color: #5c5c5c;
+    margin-right: 1rem;
+}
+
+.info-text {
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
