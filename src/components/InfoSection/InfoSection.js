@@ -10,7 +10,7 @@ export default function InfoSection(props) {
 
     useEffect(() => {
         setInfoTitle(InfoSet.titles[props.index]);
-        setInfo(InfoSet.descriptions[props.index]);
+        setInfo(InfoSet.info[props.index]);
         setPlace(InfoSet.places[props.index]);
     }, [props.index]);
     

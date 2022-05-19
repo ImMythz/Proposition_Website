@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 
+import InfoSet from '../../InfoSet.json';
+
 export default function Carousel(props) {
+    const [descriptions, setDescriptions] = useState([]);
+
+    useEffect(() => {
+        setDescriptions(InfoSet.descriptions[props.index]);
+    }, [props.index]);
     return (
         <div className="carousel-container">
             <div className="carousel-title-container"><span className='carousel-title'>GALLERY</span></div>
-            <img className="carousel-image" alt="ana and nate standing outside of Genroku" src={props.images[props.index]}/>
+            <img className="carousel-image" alt={descriptions} src={props.images[props.index]}/>
             <div className='bottom-carousel-container' >
                 <div className={props.index > 0 ? 'arrow-container-left' : 'arrow-container-left-inactive'} onClick={props.prevImage}>
                     <svg className='test-svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
