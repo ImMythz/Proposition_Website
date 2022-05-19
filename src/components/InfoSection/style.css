@@ -58,3 +58,15 @@
     font-weight: 200;
     width: 100%;
 }
+
+@media (max-width: 1100px) {
+    .info-container {
+      width: 40rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .info-container {
+      width: 28rem;
+    }
+}

@@ -37,9 +37,11 @@ export default function Home(props) {
     return (
         <>
             <NavBar />
-            <div className="main-content">
-                <InfoSection index={count} total={total}/>
-                <Carousel images={images} index={count} nextImage={nextImage} prevImage={prevImage} total={total}/>
+            <div className="main-content-container">
+                <div className="main-content">
+                    <InfoSection index={count} total={total}/>
+                    <Carousel images={images} index={count} nextImage={nextImage} prevImage={prevImage} total={total}/>
+                </div>
             </div>
             <Footer />
         </>
