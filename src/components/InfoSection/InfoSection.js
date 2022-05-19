@@ -1,22 +1,33 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 
+import InfoSet from '../../InfoSet.json';
+
 export default function InfoSection(props) {
-    const [infoTitle, setInfoTitle] = useState(['1st Date', '6 Month Anniversary', '1yr Anniversary']);
-    const [info, setInfo] = useState(['May 22nd, 2019', 'November 22nd, 2019', 'May 22nd, 2020']);
-    let titleIndex = 0;
-    let textIndex = 0;
+    const [infoTitle, setInfoTitle] = useState([]);
+    const [info, setInfo] = useState([]);
+    const [place, setPlace] = useState([]);
+
+    useEffect(() => {
+        setInfoTitle(InfoSet.titles[props.index]);
+        setInfo(InfoSet.descriptions[props.index]);
+        setPlace(InfoSet.places[props.index]);
+    }, [props.index]);
+    
     return (
         <div className='info-container'>
-            <div>
-                <span className='info-aesthetic'>timeline.</span>
-            </div>
+            <p className='info-aesthetic'>timeline.</p>
             <div className='info-title-container'>
-                <h1 className='info-title'>{infoTitle[titleIndex]}</h1>
+                <h1 className='info-title'>{infoTitle}</h1>
             </div>
-            <div className='info-text-container'>
-                <div className='indent-line'></div>
-                <p className='info-text'>{info[textIndex]}</p>
+            <div className='info-text-section'>
+                <div className='indent-line-container'>
+                    <div className='indent-line'></div>
+                </div>
+                <div className='info-text-container'>
+                    <p className='info-text'>{place}</p>
+                    <p className='info-text'>{info}</p>
+                </div>
             </div>
         </div>
     );

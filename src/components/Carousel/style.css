@@ -46,6 +46,11 @@
     height: 5rem;
     width: 5rem;
     z-index: 1;
+    user-select: none;
+}
+
+.arrow-container-left-inactive {
+    display: none;
 }
 
 .arrow-container-right {
@@ -61,6 +66,11 @@
     height: 5rem;
     width: 5rem;
     z-index: 1;
+    user-select: none;
+}
+
+.arrow-container-right-inactive {
+    display: none;
 }
 
 .test-svg {
