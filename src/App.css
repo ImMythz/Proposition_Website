@@ -1,8 +1,9 @@
 .App {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .main-content-container {
@@ -11,6 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 700px;
 }
 
 .main-content {
@@ -21,11 +23,43 @@
   align-items: center;
   max-width: 1200px;
   min-width: none;
+  min-height: 700px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
   .main-content {
     flex-direction: column-reverse;
+    justify-content: flex-end;
+    min-height: 1050px;
+  }
+  .main-content-container {
+    margin-top: 5rem;
   }
 }
+
+@media (max-width: 700px) {
+  .main-content-container {
+    margin-top: 1rem;
+  }
+  .main-content {
+    min-height: 800px;
+  }
+}
+
+@media (max-width: 500px) {
+  .App {
+    overflow-y: hidden;
+  }
+  .main-content {
+    width: 100%;
+    min-width: none;
+    min-height: 720px;
+  }
+  .main-content-container {
+    min-height: 0;
+  }
+}
+
+
+
   

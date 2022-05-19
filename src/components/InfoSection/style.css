@@ -59,9 +59,11 @@
     width: 100%;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
     .info-container {
       width: 40rem;
+      margin: 0;
+      margin: 3rem auto;
     }
 }
 
@@ -70,3 +72,18 @@
       width: 28rem;
     }
 }
+
+@media (max-width: 500px) {
+    .info-container {
+      width: 100%;
+      margin-bottom: 1.55rem;
+      padding: 0 1rem;
+    }
+    .info-title {
+        font-size: 3rem;
+    }
+    .info-text {
+        font-size: 1.2rem;
+    }
+}
+    

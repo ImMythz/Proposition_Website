@@ -9,11 +9,16 @@
   -webkit-font-smoothing: antialiased;
 }
 
-body {
+html {
   background-image: url(../src/images/NA-Background-Alt.png);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 a {
   text-decoration: none;
 }
+
+
+
+

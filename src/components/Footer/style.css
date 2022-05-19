@@ -14,3 +14,22 @@
     font-weight: 100;
     font-size: 1.5rem;
 }
+
+
+@media (hover: hover) {
+    .footer-container {
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-container {
+        position: fixed;
+        bottom: 0;
+    }
+    .footer-title {
+        font-size: 1rem;
+    }
+}
